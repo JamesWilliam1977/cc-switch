@@ -1,0 +1,339 @@
+# Instincts generated from https://github.com/JamesWilliam1977/cc-switch
+# Generated: 2026-05-01T09:57:45.941Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: cc-switch-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat, fix
+
+## Evidence
+
+- 4 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat(providers): add Baidu Qianfan Coding Plan for Claude Code (#2322), fix(claude): persist max effort via env (#2493)
+
+---
+id: cc-switch-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Commit Length
+
+## Action
+
+Write moderate-length commit messages (~51 characters)
+
+## Evidence
+
+- Average commit message length: 51 chars
+- Based on 4 commits
+
+---
+id: cc-switch-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: cc-switch-import-alias
+trigger: "when importing modules"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Import Alias
+
+## Action
+
+Use path aliases (@/, ~/) instead of relative imports
+
+## Evidence
+
+- Import analysis shows alias pattern
+- Example: import { x } from '@/lib/x'
+
+---
+id: cc-switch-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: cc-switch-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: components, config, hooks, i18n
+
+---
+id: cc-switch-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: cc-switch-instinct-naming-files
+trigger: "When creating or renaming a file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Naming Files
+
+## Action
+
+Use PascalCase for file names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: cc-switch-instinct-naming-functions
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Naming Functions
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: cc-switch-instinct-naming-classes
+trigger: "When defining a new class or struct"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Naming Classes
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: cc-switch-instinct-naming-constants
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Naming Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: cc-switch-instinct-import-style
+trigger: "When importing modules or dependencies"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Import Style
+
+## Action
+
+Use alias import style
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: cc-switch-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: cc-switch-instinct-testing-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Testing Location
+
+## Action
+
+Place tests in the separate 'tests' folder
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: cc-switch-instinct-commit-prefix
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Commit Prefix
+
+## Action
+
+Start the message with a conventional prefix such as 'feat' or 'fix'
+
+## Evidence
+
+- Seen in commit: feat(providers): add Baidu Qianfan Coding Plan for Claude Code (#2322)
+- Seen in commit: fix(claude): persist max effort via env (#2493)
+
+---
+id: cc-switch-instinct-commit-format-scope
+trigger: "When writing a commit message for a specific module or feature"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Commit Format Scope
+
+## Action
+
+Include the scope in parentheses after the prefix, e.g., 'fix(proxy): ...'
+
+## Evidence
+
+- Seen in commit: fix(proxy): preserve Vertex AI full URLs (#2415)
+- Seen in commit: feat(providers): add Baidu Qianfan Coding Plan for Claude Code (#2322)
+
+---
+id: cc-switch-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/cc-switch
+---
+
+# Cc Switch Instinct Commit Length
+
+## Action
+
+Keep the commit message concise, around 50 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
